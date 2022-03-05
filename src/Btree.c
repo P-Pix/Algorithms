@@ -66,7 +66,7 @@ int Btree_searchCopy(Btree_t tree, void *target) {
 }
 
 void *Btree_get(Btree_t *tree, int index) {
-    return tree.data[index];
+    return tree->data[index];
 }
 
 Btree_t *Btree_add(Btree_t *tree, void *data) {
