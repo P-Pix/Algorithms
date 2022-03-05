@@ -18,5 +18,10 @@ void Btree_destroy(Btree_t *tree);
 void Btree_print(Btree_t *tree);
 void Btree_sort(Btree_t *tree);
 Btree_t *Btree_add(Btree_t *tree, void *data);
+void *Btree_get(Btree_t *tree, int index);
+
+// Need test to know who is faster
+int Btree_searchPointer(Btree_t *tree, void *target);
+int Btree_searchCopy(Btree_t tree, void *target);
 
 #endif
